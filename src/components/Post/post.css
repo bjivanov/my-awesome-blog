@@ -1,0 +1,12 @@
+.title {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.text {
+  text-indent: 10px;
+}
+
+.comments-btn {
+  float: right;
+}

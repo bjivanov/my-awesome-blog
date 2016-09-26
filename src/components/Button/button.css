@@ -1,0 +1,47 @@
+@import "css/variables.css";
+
+.common {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  padding: 5px 20px;
+  min-width: 120px;
+
+  & + .common {
+    margin-left: 20px;
+  }
+}
+
+.default {
+  composes: common;
+  background-color: var(--btn-bg-color);
+  border-color: var(--btn-border-color);
+
+  &:hover {
+    background-color: color(var(--btn-bg-color) lightness(50%));
+    border-color: color(var(--btn-border-color) lightness(50%));
+  }
+}
+
+.danger {
+  composes: default;
+  background-color: var(--btn-danger-bg-color);
+  border-color: var(--btn-danger-border-color);
+
+  &:hover {
+    background-color: color(var(--btn-danger-bg-color) lightness(50%));
+    border-color: color(var(--btn-danger-border-color) lightness(50%));
+  }
+}
+
+.primary {
+  composes: default;
+  background-color: var(--btn-primary-bg-color);
+  border-color: var(--btn-primary-border-color);
+
+  &:hover {
+    background-color: color(var(--btn-primary-bg-color) lightness(50%));
+    border-color: color(var(--btn-primary-border-color) lightness(50%));
+  }
+}
